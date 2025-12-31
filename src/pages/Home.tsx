@@ -1,7 +1,6 @@
 import TopContactBar from '@/components/layout/TopContactBar'
 import MainNavigation from '@/components/layout/MainNavigation'
 import HeroSection from '@/components/sections/HeroSection'
-import ComingSoonSection from '@/components/sections/ComingSoonSection'
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       <TopContactBar />
       <MainNavigation />
       <HeroSection />
-      <ComingSoonSection />
+      {/* <ComingSoonSection /> */}
     </div>
   )
 }
