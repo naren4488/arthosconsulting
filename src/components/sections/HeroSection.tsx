@@ -1,5 +1,4 @@
 import HeroContent from './HeroContent'
-import HeroVisuals from './HeroVisuals'
 
 export default function HeroSection() {
   return (
@@ -25,7 +24,7 @@ export default function HeroSection() {
 
           {/* Right Column - Visuals */}
           <div className="order-1 lg:order-2">
-            <HeroVisuals />
+            {/* <HeroVisuals /> */}
           </div>
         </div>
       </div>
