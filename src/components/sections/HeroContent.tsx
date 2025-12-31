@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/button'
-import { ArrowRight, User } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function HeroContent() {
   return (
@@ -41,7 +41,7 @@ export default function HeroContent() {
           Start Your Journey
           <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Button>
-        
+
         {/* Our Services Button - White with gray text */}
         <Button
           size="lg"
@@ -53,32 +53,6 @@ export default function HeroContent() {
           Our Services
         </Button>
       </div>
-
-      {/* Statistics Section */}
-      <div className="flex items-center gap-4 pt-6 md:pt-8">
-        {/* User Icons */}
-        <div className="flex -space-x-2">
-          {[...Array(4)].map((_, i) => (
-            <div
-              key={i}
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-brand-dark-green bg-brand-nav-green flex items-center justify-center overflow-hidden"
-            >
-              <User className="w-5 h-5 md:w-6 md:h-6 text-white" />
-            </div>
-          ))}
-        </div>
-        
-        {/* Statistics Text */}
-        <div className="flex flex-col">
-          <span className="text-white text-lg md:text-xl lg:text-2xl font-semibold">
-            500+ Businesses
-          </span>
-          <span className="text-white/80 text-sm md:text-base">
-            Trust Arthos Consulting
-          </span>
-        </div>
-      </div>
     </div>
-  )
+  );
 }
-
