@@ -36,6 +36,7 @@ export default function MainNavigation() {
                 alt="Arthos Consulting"
                 className="h-10 md:h-12 lg:h-16 w-auto object-contain brightness-0 invert"
               />
+              <span className="text-white text-lg md:text-xl lg:text-2xl font-bold">Arthos Consulting</span>
               </a>
             </div>
 
