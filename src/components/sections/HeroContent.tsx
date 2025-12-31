@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export default function HeroContent() {
@@ -28,23 +28,26 @@ export default function HeroContent() {
 
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 pt-4">
+        {/* Our Services Button - White with dark green text and arrow */}
         <Button
           size="lg"
           className={cn(
-            "bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-base md:text-lg font-semibold group"
-          )}
-        >
-          Start Your Journey
-          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-        </Button>
-        <Button
-          variant="outline"
-          size="lg"
-          className={cn(
-            "bg-white hover:bg-gray-50 text-gray-700 border-gray-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold"
+            "bg-white hover:bg-gray-50 text-brand-dark-green border-0 rounded-full px-8 py-6 text-base md:text-lg font-semibold group"
           )}
         >
           Our Services
+          <ArrowRight className="ml-2 w-5 h-5 text-brand-dark-green group-hover:translate-x-1 transition-transform" />
+        </Button>
+        
+        {/* Contact Us Button - Orange with white text and phone icon */}
+        <Button
+          size="lg"
+          className={cn(
+            "bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-base md:text-lg font-semibold"
+          )}
+        >
+          <Phone className="mr-2 w-5 h-5" />
+          Contact Us
         </Button>
       </div>
     </div>
