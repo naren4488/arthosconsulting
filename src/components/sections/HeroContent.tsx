@@ -5,13 +5,6 @@ import { cn } from "@/lib/utils";
 export default function HeroContent() {
   return (
     <div className="flex flex-col justify-center space-y-6 md:space-y-8 lg:space-y-10">
-      {/* Tagline Badge */}
-      <div className="inline-flex items-center">
-        <div className="bg-primary/90 border border-primary/80 text-white px-4 py-2 rounded-full text-sm md:text-base font-medium flex items-center gap-2">
-          <div className="w-2 h-2 bg-primary rounded-full"></div>
-          #1 Consulting Partner for SMBs
-        </div>
-      </div>
 
       {/* Main Heading */}
       <div className="space-y-2 md:space-y-4">
